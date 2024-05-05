@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background-color:rgb(188, 206, 251);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+ 
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color:black
+    
+}
+header nav a:hover {
+    color: blue;
+}
+
+.licenciado {
+    color: rgb(4, 25, 78);
+    font-weight: 600;
+}
+
+#UM-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.div-licenciado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px
+}
+
+.contenedor-furia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap:50px;
+    margin: 5% 25%;
+}
+
+#foto-furia {
+    width: 220px;
+    height: 220px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contendor-texto-furia {
+    background-color: aliceblue;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-padre-furia {
+    display: block; /* Cambia de 'none' a 'block' para que sea visible */
+    animation: slideFromLeft 2s ease forwards;
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
